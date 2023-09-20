@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup Page</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+		}
+		form {
+			background-color: #fff;
+			padding: 20px;
+			max-width: 400px;
+			margin: 0 auto;
+			margin-top: 100px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			border-radius: 5px;
+		}
+		input[type="text"], input[type="email"], input[type="password"] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		button[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+		button[type="submit"]:hover {
+			background-color: #45a049;
+		}
+		.login {
+			display: block;
+			margin-top: 20px;
+			text-align: center;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 100px;
+			margin-bottom: 20px;
+			color: #8cd439;
+			display: block;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+<h1>Signup Here</h1>
+	<form action="usersignupdb.jsp">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Enter your name...">
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email...">
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" placeholder="Enter your password...">
+		<button type="submit">Signup</button>
+	</form>
+	<a href="userlogin.html" class="login">Already have an account? Login here</a>
+</body>
+</html>

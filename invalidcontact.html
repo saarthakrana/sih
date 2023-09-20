@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invalid Details</title>
+	<style>
+		body {
+			background-color: #F5F5F5;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		.animation {
+			width: 200px;
+			height: 200px;
+			background-image: url('https://media.giphy.com/media/l4KhQo2MESJkc6uZy/giphy.gif');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			animation: rotate 2s infinite linear;
+			margin-bottom: 20px;
+		}
+		@keyframes rotate {
+			from { transform: rotate(0deg); }
+			to { transform: rotate(360deg); }
+		}
+		.heading {
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		.text {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		.link {
+			font-size: 16px;
+			color: #0000EE;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		.link:hover {
+			color: #551A8B;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="animation"></div>
+		<div class="heading">Invalid Details</div>
+		<div class="text">The details you entered are not valid. Please try again.</div>
+		<a href="getticket.jsp" class="link">Back to Previous Page</a>
+	</div>
+</body>
+</html>

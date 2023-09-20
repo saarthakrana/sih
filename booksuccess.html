@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking Success Page</title>
+	<style type="text/css">
+		body {
+			background-color: #f2f2f2;
+		}
+		.container {
+			width: 80%;
+			margin: 0 auto;
+			padding: 40px;
+			background-color: #fff;
+			text-align: center;
+			position: relative;
+		}
+		h1 {
+			font-size: 48px;
+			color: #4CAF50;
+			margin-top: 0;
+		}
+		p {
+			font-size: 24px;
+			color: #333;
+			margin: 20px 0;
+			line-height: 1.5;
+		}
+		.checkmark {
+			width: 50px;
+			height: 50px;
+			background-color: #fff;
+			border-radius: 50%;
+			display: inline-block;
+			stroke-width: 3;
+			stroke: #4CAF50;
+			stroke-dasharray: 166;
+			stroke-dashoffset: 166;
+			animation: checkmark 1s ease-in-out 0.5s forwards;
+		}
+		@keyframes checkmark {
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+		.checkmark__check {
+			transform-origin: 50% 50%;
+			stroke-dasharray: 48;
+			stroke-dashoffset: 48;
+			animation: check 0.5s ease-in-out 1s forwards;
+		}
+		@keyframes check {
+			to {
+				stroke-dashoffset: 0;
+				transform: rotate(45deg);
+			}
+		}
+		.home-button {
+			position: absolute;
+			bottom: 40px;
+			left: 50%;
+			transform: translateX(-50%);
+			padding: 16px 32px;
+			font-size: 24px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		.home-button:hover {
+			background-color: #388E3C;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Booking Confirmed!</h1>
+		<p>Thank you for booking with us. Your booking has been confirmed and a confirmation email has been sent to you. We hope you enjoy your stay!</p>
+		<div class="checkmark">
+			<svg class="checkmark__check" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M14 27.2L20 33.2L34 19.2" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</div>
+		<button class="home-button" onclick="window.location.href='getticket.jsp'">Get Ticket</button>
+	</div>
+</body>
+</html>
