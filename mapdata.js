@@ -1,19 +1,17 @@
 var simplemaps_countrymap_mapdata={
   main_settings: {
     //General settings
-		// width: "responsive", //or 'responsive'
-    width: 600,
-    background_color: "#FFFFFF",
+		width: 530,
+    background_color: "azure",
     background_transparent: "yes",
     border_color: "#ffffff",
-    pop_ups: "detect",
+    pop_ups:"detect",
     
 		//State defaults
-		state_description: "State description",
-    state_color: "#88A4BC",
+		state_description: "",
+    state_color: "#000000",
     state_hover_color: "#3B729F",
-    // state_url: "https://simplemaps.com",
-    border_size: 1.5,
+    border_size: 0.5,
     all_states_inactive: "no",
     all_states_zoomable: "yes",
     
@@ -25,8 +23,8 @@ var simplemaps_countrymap_mapdata={
     location_url: "",
     location_size: 25,
     location_type: "square",
-    location_image_source: "frog.png",
-    location_border_color: "#FFFFFF",
+    location_image_source: "",
+    location_border_color: "#000000",
     location_border: 2,
     location_hover_border: 2.5,
     all_locations_inactive: "no",
@@ -44,17 +42,20 @@ var simplemaps_countrymap_mapdata={
 		zoom: "yes",
     back_image: "no",
     initial_back: "no",
+    background_color:"blue",
     initial_zoom: "-1",
-    initial_zoom_solo: "no",
-    region_opacity: 1,
-    region_hover_opacity: 0.6,
+    initial_zoom_solo: "yes",
+    region_opacity: 0.1,
+    region_hover_opacity: 1,
     zoom_out_incrementally: "yes",
-    zoom_percentage: 0.75,
+    zoom_percentage: 0.5,
     zoom_time: 0.5,
+
+
     
 		//Popup settings
 		popup_color: "white",
-    popup_opacity: 0.9,
+    popup_opacity: 1,
     popup_shadow: 1,
     popup_corners: 5,
     popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
@@ -172,7 +173,8 @@ var simplemaps_countrymap_mapdata={
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "jharkhand.html"
+      
     },
     "17": {
       name: "Karnataka",
@@ -291,14 +293,14 @@ var simplemaps_countrymap_mapdata={
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "test.html"
     },
     "34": {
       name: "Uttaranchal",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: ""
     },
     "35": {
       name: "West Bengal",
@@ -329,17 +331,6 @@ var simplemaps_countrymap_mapdata={
       url: "default"
     }
   },
-  locations: {
-    "0": {
-      lat: 18.987807,
-      lng: 72.836447,
-      name: "Mumbai"
-    },
-    "1": {
-      lat: 24.4852,
-      lng: 86.6948,
-      name: "Deoghar"
-    }
-  },
+
   labels: {}
 };
